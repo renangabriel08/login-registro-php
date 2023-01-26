@@ -1,0 +1,127 @@
+footer {
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../assets/background3.png);
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-top: 88px;
+            img {
+                width: 63px;
+                height: 71px;
+                @media (max-width: 470px) {
+                    width: 43px;
+                    height: 50px;
+                }
+            }
+            .nome {
+                font-family: 'Oswald';
+                font-weight: 400;
+                font-size: 35px;
+                color: #555555;
+                @media (max-width: 470px) {
+                    font-size: 25px;
+                }
+            }
+        }
+        .titulo {
+            font-family: 'Nunito Sans';
+            font-weight: 400;
+            font-size: 36px;
+            color: #1B1A1A;
+
+            display: flex;
+            text-align: center;
+
+            margin-top: 15px;
+            margin-bottom: 7px;
+
+            @media (max-width: 470px) {
+                font-size: 27px;
+            }
+        }
+        .info {
+            width: 416px;
+            text-align: center;
+            margin-bottom: 17px;
+
+            font-family: 'Nunito Sans';
+            font-weight: 300;
+            font-size: 18px;
+            color: #5E5E5E;
+
+            @media (max-width: 470px) {
+                font-size: 13px;
+                max-width: 250px;
+            }
+        }
+        .email {
+            margin-bottom: 78px;
+            @media (max-width: 470px) {
+                display: flex;
+                flex-direction: column;
+            }
+           input {
+            width: 275px;
+            height: 37px;
+            padding-left: 10px;
+
+            border: 0.8px solid #5A5A5A;
+            border-radius: 4px;
+
+            font-family: 'Nunito Sans';
+            font-weight: 300;
+            font-size: 12px;
+            color: #8E8E8E;
+
+            @media (max-width: 470px) {
+                width: 250px;
+            }
+           }
+           button {
+            font-family: 'Nunito Sans';
+            font-weight: 300;
+            font-size: 12px;
+
+            padding: 10px 29px;
+            border: 0.8px solid #5A5A5A;
+            border-radius: 4px;
+            
+            color: #1B1A1A;
+            background-color: transparent;
+           }
+        }
+    }
+    .parte-inferior {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        height: 59px;
+        background-color: #FFF;
+        max-width: 100%;
+        .texto {
+            font-family: 'Nunito';
+            font-weight: 300;
+            font-size: 12px;
+            color: #424242;
+            @media (max-width: 470px) {
+                max-width: 180px;
+                text-align: center;
+            }
+        }
+        .redes-sociais {
+            display: flex;
+            gap: 21px;
+            @media (max-width: 470px) {
+                gap: 10px;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

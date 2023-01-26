@@ -1,0 +1,75 @@
+header {
+    display: flex;
+    height: 79px;
+    background-color: #D3CBC5;
+    align-items: center;
+    justify-content: space-around;
+    .interior {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        @media (max-width: 630px) {
+            display: none;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        .img-home {
+            width: 31px;
+            height: 35px;
+        }
+        .interior {
+            font-family: 'Oswald';
+            font-weight: 400;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            color: #555555;
+        }
+    }
+    .paginas-topo {
+        display: flex;
+        gap: 35px;
+        @media (max-width: 800px) {
+            gap: 20px;
+        }
+        @media (max-width: 400px) {
+            gap: 7px;
+        }
+        .pagina {
+            font-family: 'Nunito Sans';
+            font-weight: 300;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            color: #1B1A1A;
+            @media (max-width: 630px) {
+                font-size: 12px;
+            }
+            @media (max-width: 400px) {
+                font-size: 12px;
+            }
+            &:hover {
+                border-bottom: solid 1px #1B1A1A;
+                cursor: pointer;
+            }
+        }
+    }
+    .busca {
+        display: flex;
+        gap: 27px;
+        @media (max-width: 630px) {
+            gap: 10px;
+        }
+        @media (max-width: 400px) {
+            display: none;
+        }
+        .img-busca {
+            max-width: 19px;
+            max-height: 19px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
